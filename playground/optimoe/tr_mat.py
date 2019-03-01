@@ -2,6 +2,8 @@ import numpy as np
 import numpy.linalg as LA
  
 def rt_gouy(RTM):
+	''' This function takes in a round trip cavity transfer matrix (numpy.matrix()) 
+             and computes the amount of round trip gouy phase '''
 	[w,v] = LA.eig(RTM)
 	gp = np.arccos(np.real(w[0]))
 	q1 = v[0,0]/v[1,0]
