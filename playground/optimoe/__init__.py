@@ -1,1 +1,1 @@
-from optimo import tr_mat
+from optimoe import tr_mat
