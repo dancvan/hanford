@@ -2,9 +2,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{hyperref}
+
 
 \title{RH PWR guardian (manual)}
 \author{Daniel Vander-Hyde, Stefan Ballmer, Thomas Vo, TJ Shaffer}
+\href{mailto:dcvander@syr.edu}{dcvander@syr.edu}
 \date{February 2019}
 
 \begin{document}
@@ -25,7 +28,7 @@ To make a change in RH power with the inverse filter, one needs to change the gu
 You will want to be in the NOMINAL state when making this change. After making the change, it is suggested that you update the input filter offset by going to RESET and back to NOMINAL so that the FILTER\_RH\_INPUT state can operate when you do request to make a filtered change. 
 
 \subsection{Going back on a filtered change}
-In the case you are making a filtered change and you want change the output back to the original output power, you have the option of going from the FILTER\_RH\_INPUT state, to the RESET state, to NOMINAL, which performs this change of input to the RH. 
+In the case you are making a filtered change and you want change the output back to the original output power, you have the option of going from the FILTER\_RH\_INPUT state, to the RESET state, to NOMINAL. From there, you can change the power back to the original value and set your $\mu$ back to the original value by gong to RESET and back to NOMINAL.
 
 \subsection{Guardian States}
 \subsubsection{NOMINAL}
@@ -49,16 +52,21 @@ In the case you are making a filtered change and you want change the output back
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{FILTER_RH_INPUT_DIAGRAM.pdf}
-    \caption{A controls diagram of the FILTER\_RH\_INPUT state. The connection unique to this state is between x' and z. This sets the output of the iRH to the input of the plant.  }
+    \caption{A controls diagram of the FILTER\_RH\_INPUT state. The connection unique to this state is between x' and z. This sets the output of the iRH to the input of the plant. }
 \end{figure}
 \subsubsection{RESET}
 \begin{itemize}
-\item From NOMINAL?
+\item From NOMINAL
+	\subitem If you are transitioning from the NOMINAL state to the reset state, you will:
+		\subsubitem Update your reset $\mu$ (Filter DC offset) value 
+		\subsubitem Clear the history on iRH and iiRH
+\subitem
 
-\item FROM FILTER\_RH\_INPUT?
+\item From FILTER\_RH\_INPUT
+	\subitem If you are transitioning from the FILTER\_RH\_INPUT state, you will: 
+		\subsubitem Update your $\mu$ value (Filter DC offset) with the input from of iRH (be aware that if entered into prematurely, this sets $\mu$ to the final value the filter would have reached if the filter was untouched)
+		\subsubitem Clear the history on iRH and iiRH
 \end{itemize}
-
-\section{Citations}
 
 \end{document}
 
