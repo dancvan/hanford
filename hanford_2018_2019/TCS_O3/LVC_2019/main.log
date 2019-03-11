@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  28 FEB 2019 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  7 MAR 2019 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**doc.tex
-(./doc.tex
+**main.tex
+(./main.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -337,6 +337,14 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip43
+\@affilsep=\skip44
+\c@Maxaffil=\count87
+\c@authors=\count88
+\c@affil=\count89
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -364,18 +372,37 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count90
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count88
-\float@exts=\toks17
-\float@box=\box26
-\@float@everytoks=\toks18
-\@floatcapt=\box27
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks17
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+\TX@col@width=\dimen107
+\TX@old@table=\dimen108
+\TX@old@col=\dimen109
+\TX@target=\dimen110
+\TX@delta=\dimen111
+\TX@cols=\count91
+\TX@ftn=\toks18
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip47
+\enit@outerparindent=\dimen112
+\enit@toks=\toks19
+\enit@inbox=\box26
+\enitdp@description=\count92
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
@@ -433,16 +460,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen105
-\Hy@linkcounter=\count89
-\Hy@pagecounter=\count90
+\@linkdim=\dimen113
+\Hy@linkcounter=\count93
+\Hy@pagecounter=\count94
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count91
+\Hy@SavedSpaceFactor=\count95
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -454,17 +481,17 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count92
+\c@Hy@tempcnt=\count96
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen106
-\Fld@menulength=\count93
-\Field@Width=\dimen107
-\Fld@charsize=\dimen108
+\XeTeXLinkMargin=\dimen114
+\Fld@menulength=\count97
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -474,90 +501,71 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count94
-\c@Item=\count95
-\c@Hfootnote=\count96
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count97
-\c@bookmark@seq@number=\count98
+\Fld@listcount=\count101
+\c@bookmark@seq@number=\count102
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip43
+\Hy@SectionHShift=\skip48
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/outlines/outlines.sty
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
 
-! LaTeX Error: Missing \begin{document}.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks20
+\float@box=\box27
+\@float@everytoks=\toks21
+\@floatcapt=\box28
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+ (./main.aux)
+\openout1 = `main.aux'.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ...mailto:dcvander@syr.edu}{dcvander@syr.edu}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\hyper@linkurl ...tionraw >>}\relax \Hy@colorlink 
-                                                  \@urlcolor #1\Hy@xspace@en...
-l.10 ...mailto:dcvander@syr.edu}{dcvander@syr.edu}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\close@pdflink ->\Hy@endcolorlink 
-                                  \Hy@VerboseLinkStop \pdfendlink 
-l.10 ...mailto:dcvander@syr.edu}{dcvander@syr.edu}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(./doc.aux)
-\openout1 = `doc.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count99
-\scratchdimen=\dimen109
-\scratchbox=\box28
-\nofMPsegments=\count100
-\nofMParguments=\count101
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count102
-\MPscratchDim=\dimen110
-\MPnumerator=\count103
-\makeMPintoPDFobject=\count104
-\everyMPtoPDFconversion=\toks20
+\scratchcounter=\count104
+\scratchdimen=\dimen117
+\scratchbox=\box29
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen118
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -573,8 +581,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 13.
+\AtBeginShipoutBox=\box30
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 144.
+)
+Package hyperref Info: Link coloring ON on input line 52.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -582,85 +599,147 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count105
+\c@section@level=\count110
 )
-LaTeX Info: Redefining \ref on input line 13.
-LaTeX Info: Redefining \pageref on input line 13.
-LaTeX Info: Redefining \nameref on input line 13.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
+
+(./main.out) (./main.out)
 \@outlinefile=\write3
-\openout3 = `doc.out'.
+\openout3 = `main.out'.
 
-
-[1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 55.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 55.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 55.
+ (./abstract.tex) [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 18.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 18.
+<../figures/TCS_schema_smaller.pdf, id=67, 347.78072pt x 308.08371pt>
+File: ../figures/TCS_schema_smaller.pdf Graphic file (type pdf)
 
-[2] <NOMINAL_DIAGRAM.pdf, id=23, 752.19208pt x 357.1967pt>
-File: NOMINAL_DIAGRAM.pdf Graphic file (type pdf)
+<use ../figures/TCS_schema_smaller.pdf>
+Package pdftex.def Info: ../figures/TCS_schema_smaller.pdf used on input line 6
+5.
+(pdftex.def)             Requested size: 345.0pt x 305.64313pt.
+ (./contrast_defect.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+ [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
 
-<use NOMINAL_DIAGRAM.pdf>
-Package pdftex.def Info: NOMINAL_DIAGRAM.pdf used on input line 37.
-(pdftex.def)             Requested size: 345.0pt x 163.82738pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 $$
+       <../figures/TCS_schema_smaller.pdf>]) (./absorption.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [3 <./NOMINAL_DIAGRAM.pdf, page is rotated 270 degrees>]
-<FILTER_RH_INPUT_DIAGRAM.pdf, id=49, 751.51707pt x 356.02821pt>
-File: FILTER_RH_INPUT_DIAGRAM.pdf Graphic file (type pdf)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 
-<use FILTER_RH_INPUT_DIAGRAM.pdf>
-Package pdftex.def Info: FILTER_RH_INPUT_DIAGRAM.pdf used on input line 54.
-(pdftex.def)             Requested size: 345.0pt x 163.44357pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
- [4 <./FILTER_RH_INPUT_DIAGRAM.pdf, page is rotated 270 degrees>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
- (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
+Overfull \hbox (4.29694pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/10 Follow up with notes (un-cer-tain-ties, po-ten-tial point ab-
+sorber is-sues.. maybe
+ []
+
+) (./mode_matching.tex) (./TCS_locking.tex
+<../figures/ITMX_TCS_Settings.png, id=107, 1445.4pt x 722.7pt>
+File: ../figures/ITMX_TCS_Settings.png Graphic file (type png)
+
+<use ../figures/ITMX_TCS_Settings.png>
+Package pdftex.def Info: ../figures/ITMX_TCS_Settings.png used on input line 8.
+
+(pdftex.def)             Requested size: 345.0pt x 172.49214pt.
+
+<../figures/ITMY_TCS_Settings.png, id=109, 1445.4pt x 722.7pt>
+File: ../figures/ITMY_TCS_Settings.png Graphic file (type png)
+
+<use ../figures/ITMY_TCS_Settings.png>
+Package pdftex.def Info: ../figures/ITMY_TCS_Settings.png used on input line 9.
+
+(pdftex.def)             Requested size: 345.0pt x 172.49214pt.
+ [3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure
+.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.16             \subsubitem
+                             Positive lens thermal distortions are replicate...
+ <../figures/ITMX_TCS_Settings.png> <../figures/ITMY_TCS_Settings.png>])
+(./pa.tex
+<../figures/1231726400_3d_200dur_30W_ITM.png, id=125, 1084.05pt x 505.89pt>
+File: ../figures/1231726400_3d_200dur_30W_ITM.png Graphic file (type png)
+
+<use ../figures/1231726400_3d_200dur_30W_ITM.png>
+Package pdftex.def Info: ../figures/1231726400_3d_200dur_30W_ITM.png used on in
+put line 7.
+(pdftex.def)             Requested size: 207.0021pt x 96.59868pt.
+
+<../figures/1231726400_3d_1000dur_30W_ITM.png, id=126, 1084.05pt x 505.89pt>
+File: ../figures/1231726400_3d_1000dur_30W_ITM.png Graphic file (type png)
+
+<use ../figures/1231726400_3d_1000dur_30W_ITM.png>
+Package pdftex.def Info: ../figures/1231726400_3d_1000dur_30W_ITM.png used on i
+nput line 8.
+(pdftex.def)             Requested size: 207.0021pt x 96.59868pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.22             \4 \href
+                         {https://dcc.ligo.org/DocDB/0158/G1900257/001/G1900...
+ <../figures/1231726400_3d_200dur_30W_ITM.png> <../figures/1231726400_3d_1000du
+r_30W_ITM.png>]) (./tcs_settings.tex) (./future.tex [6])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+ (./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
 
 
-Package rerunfilecheck Warning: File `doc.out' has changed.
+Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: Checksums for `doc.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  911FB3231CBE1A6EBE8408B4EE24E2C6;644.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: A714A02F9735942362E767C54E3417E3;920
+(rerunfilecheck)             After:  CA6AEE5A89AB98FAF142A778AC34ABB1;909.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
  ) 
 Here is how much of TeX's memory you used:
- 5444 strings out of 493014
- 79373 string characters out of 6133351
- 166133 words of memory out of 5000000
- 8937 multiletter control sequences out of 15000+600000
- 7895 words of font info for 28 fonts, out of 8000000 for 9000
+ 6077 strings out of 493014
+ 89104 string characters out of 6133351
+ 178912 words of memory out of 5000000
+ 9503 multiletter control sequences out of 15000+600000
+ 8502 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,28p,1009b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,28p,1747b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on doc.pdf (4 pages, 130002 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on main.pdf (7 pages, 3999314 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

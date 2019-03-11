@@ -1,0 +1,11 @@
+## Characterizing lensing ##
+	* In order to properly characterize the lensing during powerup, it seems natural to first characterize affect the actuation alone has on the power up
+	* Since the ring heaters are on constantly during power up, I wont think too much about that right now but will probably consider that later
+	* CO2 characterization:
+		> From what I am seeing (based off of data from october which may be crap since Dan discovered later that the spherical power calculation is very sensitive to the centering, here is the CO2 calibration then: 
+			~ AROUND OCTOBER 16th
+				+ CO2X = 50-ish udiopter/(.6W) = 83-ish udiopter/Watt
+				+ CO2Y = 48-ish udiopter/(.95W) = 51-ish udiopter/Watt
+			~ NOW?
+	* We don't have an exact calibration now, but is there a clever way we can get one based off of the ifo power increase response data?
+		> generate step response filter?
