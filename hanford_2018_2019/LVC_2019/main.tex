@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{authblk}
+\usepackage{graphicx}
+\graphicspath{{../figures/}}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{outlines}
+\usepackage{float}
+\hypersetup{ 
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\author[1]{D. Vander-Hyde presenting on behalf of the LHO TCS comissioning team}
+\author[2]{LHO TCS commissioning team: T. Vo, D. Brown, G. Mansell, A. Brooks, S. Ballmer, H. Yu, J. Driggers, G. Vajente, H. Yamamoto}
+
+
+\affil[1,2,5]{Syracuse University}
+\affil[3]{University of Adelaide}
+\affil[4]{Massachusetts Institute of Technology}
+\affil[4,6,7,]{California Institute of Technology}
+\affil[1]{dcvander@syr.edu}
+\affil[2]{Email id: ba@gmail.com}
+\affil[1,3]{Email id: ca@gmail.com}
+
+\title{LHO TCS commissioning for O3}
+{
+    \makeatletter
+    \renewcommand\AB@affilsepx{: \protect\Affilfont}
+    \makeatother
+
+    \affil[ ]{Email ids}
+
+    \makeatletter
+    \renewcommand\AB@affilsepx{, \protect\Affilfont}
+    \makeatother
+
+    \affil[1]{aa@gmail.com}
+    \affil[2]{ba@gmail.com}
+    \affil[1,3]{ca@gmail.com}
+}
+
+\date{March 2019}
+
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\input{abstract.tex}
+\end{abstract}
+
+
+\section{Thermal compensation schema for O3}
+\begin{figure}[H]
+    \centering
+        \includegraphics[width=1\textwidth=1]{TCS_schema_smaller.pdf}
+        \caption{Cartoon figure (where can I get real one?)}
+\end{figure}
+    
+
+\section{Measurements}
+	\subsection{Differential Lens tuning}
+		\input{contrast_defect.tex}
+	\subsection{Absorption estimates}
+		\input{absorption.tex}
+	\subsection{Mode-matching}
+		\input{mode_matching.tex}
+	\subsection{LHO locking with TCS}
+		\input{TCS_locking.tex}     
+	\subsection{Effects of high frequency spatial defects on test masses (Point absorbers)}
+		\input{pa.tex}
+
+\section{TCS settings going into O3}
+	\input{tcs_settings.tex}
+
+\section{Future tests/measurements/analysis}
+	\input{future.tex}
+
+
+
+\end{document}
