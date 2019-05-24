@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -54,5 +54,4 @@ plt.colorbar()
 #Show the result in the plot winow
 plt.show()
 print("")
-
 
